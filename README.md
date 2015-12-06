@@ -55,7 +55,7 @@ say('click me to remove me')
 function rot(somthing)
 repeat
 	for i = 0,math.huge,0.1 do wait()
-		tab.CFrame = workspace[admin].Torso.CFrame * CFrame.Angles(0,math.rad(i),0) * CFrame.new(0,0,-dis)
+		tab.CFrame = workspace[admin].Torso.CFrame * CFrame.Angles(0,math.rad(i),0) * CFrame.new(0,0,-dis) * CFrame.Angles(math.abs(i),0,math.abs(i))
 	end
 until false
 end
