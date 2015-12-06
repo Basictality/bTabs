@@ -1,4 +1,4 @@
-admin = "Player"
+admin = "Basictality"
 maincol = "Teal"
 selcol = "Really black"
 size = "2" --for example, "2".
@@ -24,6 +24,7 @@ if Player.Name == admin  then
 for i = size,0,-0.1 do wait()
 	tab.Size = Vector3.new(i,i,i)
 end
+game.Debris:AddItem(tab,0)
 end
 end
 end
@@ -39,7 +40,7 @@ function say(saying)
 		gui.StudsOffset=Vector3.new(0,2,0)
 		text=Instance.new("TextLabel",gui)
 		text.Text = saying
-		text.TextScaled = true
+		text.FontSize = "Size48"
 		text.Size=UDim2.new(0,100,0,100)
 		text.Position=UDim2.new(0,0,0,0)
 		text.BackgroundTransparency = 1
@@ -48,7 +49,7 @@ function say(saying)
 		text.TextColor3 = Color3.new(255,255,255)
 end
 
-say(math.randomseed(53511))
+say(math.rad(53511))
 
 
 function rot(somthing)
