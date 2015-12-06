@@ -1,4 +1,4 @@
-admin = "Basictality"
+admin = game.Players.LocalPlayer.Name
 maincol = "Teal"
 selcol = "Really black"
 size = "2" --for example, "2".
@@ -49,7 +49,7 @@ function say(saying)
 		text.TextColor3 = Color3.new(255,255,255)
 end
 
-say(math.rad(53511))
+say('click me to remove me')
 
 
 function rot(somthing)
