@@ -7,11 +7,11 @@ dis = "7"
 seltrans = "0.5"
 
 	local tab = Instance.new('Part',workspace)
-	tab.BrickColor = BrickColor.new(maincol)
-	tab.FormFactor = formfac
-	tab.Size = Vector3.new(size,size,size)
-	tab.Material = "Neon"
-	tab.Anchored = true
+	tab{BrickColor = BrickColor.new(maincol);
+	FormFactor = formfac;
+	Size = Vector3.new(size,size,size);
+	Material = "Neon";
+	Anchored = true;}
 	
 	tabsel=Instance.new('SelectionBox',tab)
 	tabsel.Color3 = Color3.new(selcol)
